@@ -15,7 +15,7 @@ class UserFactory extends Factory
      */
     public function definition()
     {
-        $personalNumber = $this->faker->numberBetween(62000, 65000);
+        $personalNumber = $this->faker->unique()->numberBetween(62000, 65000);
 
         return [
             'personal_number' => $personalNumber,
